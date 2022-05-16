@@ -1,0 +1,22 @@
+{
+  "name": "opendesk-build",
+  "version": "1.0.0",
+  "description": "My static replica of the opendesk website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmagnuson07/opendesk-build.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmagnuson07/opendesk-build/issues"
+  },
+  "homepage": "https://github.com/lmagnuson07/opendesk-build#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
