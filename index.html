@@ -6,81 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opendesk - Furniture designed for inspiring workplaces</title>
     <link rel="stylesheet" href="custom-sass/styles.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
-                    <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
-                    <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+    <header class="sticky-top">
+        <nav class="navbar navbar-light bg-white">
+            <div class="container">
+
+                <button class="navbar-toggler btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- <h1> -->
+                <a class="navbar-brand" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
+                        <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                        <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+                    </svg>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="20" viewBox="0 0 125 32">
+                        <path d="M10.063 12.942c0-2.011-1.645-3.646-3.592-3.646h-0.336c-1.947 0-3.592 1.636-3.592 3.646v6.202c0 1.976 1.645 3.646 3.592 3.646h0.336c1.947 0 3.592-1.67 3.592-3.646v-6.202zM6.471 24.461h-0.336c-2.887 0-5.237-2.386-5.237-5.316v-6.202c0-2.965 2.35-5.316 5.237-5.316h0.336c2.887 0 5.236 2.352 5.236 5.316v6.202c0 2.93-2.349 5.316-5.236 5.316v0z"></path>
+                        <path d="M26.247 12.909c0-1.977-1.578-3.613-3.558-3.613h-0.302c-1.981 0-3.592 1.738-3.592 3.714v6.066c0 2.010 1.578 3.714 3.592 3.714h0.302c1.98 0 3.558-1.602 3.558-3.612v-6.27zM22.689 24.461h-0.302c-1.377 0-2.954-0.682-3.592-1.67v7.974c0 0.579-0.436 0.852-0.84 0.852s-0.839-0.273-0.839-0.852v-22.286c0-0.58 0.436-0.852 0.839-0.852s0.84 0.273 0.84 0.852v0.818c0.638-0.886 2.215-1.67 3.592-1.67h0.302c2.921 0 5.236 2.386 5.236 5.316v6.202c0 2.964-2.35 5.316-5.236 5.316v0z"></path>
+                        <path d="M42.162 12.942c0-2.011-1.679-3.646-3.559-3.646h-0.336c-1.981 0-3.626 1.636-3.626 3.646v2.249h7.52v-2.249zM42.968 16.895h-8.325v2.249c0 1.976 1.645 3.646 3.592 3.646h0.336c1.544 0 2.854-1.022 3.323-2.454 0.134-0.409 0.436-0.579 0.772-0.579 0.436 0 0.907 0.306 0.907 0.818 0 0.102-0.035 0.204-0.068 0.307-0.705 2.113-2.651 3.578-4.934 3.578h-0.336c-2.887 0-5.237-2.386-5.237-5.316v-6.202c0-2.93 2.35-5.316 5.204-5.316h0.336c2.92 0 5.27 2.249 5.27 5.316v3.101c0 0.443-0.403 0.852-0.839 0.852v0z"></path>
+                        <path d="M58.85 24.461c-0.403 0-0.839-0.273-0.839-0.852v-10.7c0-2.011-1.578-3.613-3.559-3.613h-0.302c-2.014 0-3.592 1.704-3.592 3.714v10.598c0 0.579-0.436 0.852-0.84 0.852s-0.839-0.273-0.839-0.852v-15.13c0-0.58 0.436-0.852 0.839-0.852s0.84 0.273 0.84 0.852v0.818c0.638-0.988 2.215-1.67 3.592-1.67h0.302c2.887 0 5.236 2.352 5.236 5.316v10.666c0 0.579-0.436 0.852-0.839 0.852z"></path>
+                        <path d="M73.893 13.010c0-2.010-1.578-3.714-3.592-3.714h-0.302c-1.981 0-3.559 1.602-3.559 3.612v6.27c0 1.976 1.578 3.612 3.559 3.612h0.302c1.98 0 3.592-1.738 3.592-3.714v-6.066zM74.731 24.461c-0.403 0-0.839-0.273-0.839-0.852v-0.818c-0.638 0.886-2.216 1.67-3.592 1.67h-0.302c-2.921 0-5.237-2.386-5.237-5.316v-6.202c0-2.965 2.35-5.316 5.237-5.316h0.302c1.376 0 2.954 0.682 3.592 1.67v-7.94c0-0.58 0.436-0.852 0.839-0.852s0.839 0.272 0.839 0.852v22.253c0 0.579-0.436 0.852-0.839 0.852v0z"></path>
+                        <path d="M90.781 12.942c0-2.011-1.679-3.646-3.559-3.646h-0.336c-1.981 0-3.626 1.636-3.626 3.646v2.249h7.52v-2.249zM91.587 16.895h-8.325v2.249c0 1.976 1.645 3.646 3.592 3.646h0.336c1.544 0 2.854-1.022 3.323-2.454 0.134-0.409 0.436-0.579 0.772-0.579 0.436 0 0.907 0.306 0.907 0.818 0 0.102-0.035 0.204-0.068 0.307-0.705 2.113-2.651 3.578-4.934 3.578h-0.336c-2.887 0-5.237-2.386-5.237-5.316v-6.202c0-2.93 2.35-5.316 5.204-5.316h0.336c2.921 0 5.27 2.249 5.27 5.316v3.101c0 0.443-0.403 0.852-0.839 0.852v0z"></path>
+                        <path d="M102.333 24.461h-0.604c-2.048 0-4.331-1.329-5.304-3.374-0.033-0.136-0.1-0.272-0.1-0.375 0-0.477 0.47-0.852 0.906-0.852 0.303 0 0.605 0.17 0.739 0.511 0.671 1.431 2.35 2.419 3.76 2.419h0.604c2.282 0 3.793-1.499 3.793-3.17 0-5.52-9.097-1.601-9.097-7.906v-0.17c0-2.249 2.216-3.919 5.103-3.919h0.067c2.82 0 4.733 1.431 4.733 2.215 0 0.444-0.369 0.853-0.805 0.853-0.168 0-0.369-0.068-0.57-0.239-0.873-0.818-1.88-1.159-3.357-1.159h-0.168c-1.377 0-3.358 0.682-3.358 2.283v0.136c0 4.362 9.131 0.955 9.131 7.906 0 3.374-3.122 4.84-5.472 4.84z"></path>
+                        <path d="M123.887 9.091l-4.901 5.282 4.968 8.792c0.101 0.17 0.135 0.307 0.135 0.443 0 0.477-0.437 0.852-0.907 0.852-0.269 0-0.537-0.137-0.705-0.444l-4.7-8.315-3.022 3.237v4.669c0 0.579-0.403 0.852-0.805 0.852-0.436 0-0.839-0.273-0.839-0.852v-22.253c0-0.58 0.403-0.852 0.839-0.852 0.403 0 0.805 0.272 0.805 0.852v15.062l7.889-8.519c0.202-0.205 0.404-0.273 0.604-0.273 0.47 0 0.873 0.409 0.873 0.886 0 0.17-0.033 0.375-0.235 0.579z"></path>
+                    </svg>
+                </a>
+                <!-- </h1> -->
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
-                opendesk
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Furniture</a>
-                    <ul>
-                        <li><a href="#">Furniture</a></li>
-                        <li><a href="#">Ranges</a></li>
-                        <li><a href="#">Designers</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Workspaces</a>
-                    <ul>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Why Opendesk</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Open Making</a>
-                    <ul>
-                        <li><a href="#">Intro</a></li>
-                        <li><a href="#">Our Model</a></li>
-                        <li><a href="#">Makers</a></li>
-                        <li><a href="#">Workshop</a></li>
-                        <li><a href="#">Designer Collaberation</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Your dashboard</a></li>
-                <li><a href="#">Join as a maker</a></li>
-            </ul>
+
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body dropdown">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Furniture</a>
+                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown1">
+                                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                    <li><a class="dropdown-item" href="#">Ranges</a></li>
+                                    <li><a class="dropdown-item" href="#">Designers</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workspaces</a>
+                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown2">
+                                    <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                                    <li><a class="dropdown-item" href="#">Pricing</a></li>
+                                    <li><a class="dropdown-item" href="#">Why Opendesk</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Open Making</a>
+                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown3">
+                                    <li><a class="dropdown-item" href="#">Intro</a></li>
+                                    <li><a class="dropdown-item" href="#">Our Model</a></li>
+                                    <li><a class="dropdown-item" href="#">Makers</a></li>
+                                    <li><a class="dropdown-item" href="#">Workshop</a></li>
+                                    <li><a class="dropdown-item" href="#">Designer Collaberation</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Your dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Join as a maker</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-        </svg>
     </header>
 
     <main>
-        <section>
-            <h2>Furniture designed for inspiring workplaces</h2>
-            <p>We're changing the way furniture is made, by connecting customers to local makers</p>
-            <a href="#">Shop Furniture</a>
-        </section>
-
-        <div>
-            <section>
-                <img src="img/lean-desk-home-page.jpg" alt="A wooden lean desk">
-                <h2>Lean Desk</h2>
-                <p>Generous four seat workstation</p>
-            </section>
-
-            <section>   
-                <img src="img/johann-desk-home-page.jpg" alt="A 2 person Johann bench">
-                <h2>Johann Bench</h2>
-                <p>2 person canteen and meeting bench</p>
-            </section>
+        <div class="bg-img py-3" style="background-image: url('../img/main-page-banner-bg.jpg')">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <section class="text-white">
+                            <h2 class="my-4 fs-1 lh-base">Furniture designed for inspiring workplaces</h2>
+                            <p class="fs-4">We're changing the way furniture is made, by connecting customers to local makers</p>
+                            <a class="btn btn-success mt-3" href="#">Shop Furniture</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <section>
-            <h2>A global platform for local making</h2>
-            <p>Opendesk is an online marketplace that hosts independently designed furniture and connects its customers to local makers around the world. Rather than mass manufacturing and shipping worldwide, we're building a distributed and ethical supply chain through a global maker network.</p>
-        </section>
+        <div class="container bg-secondary py-4">
+            <div class="row">
+                <div class="col-sm-6">
+                    <section class="card bg-secondary">
+                        <img class="card-img-top" src="img/lean-desk-home-page.jpg" alt="A wooden lean desk">
+                        <div class="card-body p-0 text-center">
+                            <h2 class="fs-5">Lean Desk</h2>
+                            <p class="fs-6">Generous four seat workstation</p>
+                        </div>
+                    </section>
+                </div>
+    
+                <div class="col-sm-6">
+                    <section class="card bg-secondary">   
+                        <img class="card-img-top" src="img/johann-desk-home-page.jpg" alt="A 2 person Johann bench">
+                        <div class="card-body p-0 text-center">
+                            <h2 class="fs-5">Johann Bench</h2>
+                            <p class="fs-6">2 person canteen and meeting bench</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-img py-3" style="background-image: url('../img/local-marketing-bg-main-page.jpg')">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col">
+                        <section class="text-white">
+                            <h2 class="my-4 fs-1 lh-base">A global platform for local making</h2>
+                            <p class="fs-4">Opendesk is an online marketplace that hosts independently designed furniture and connects its customers to local makers around the world. Rather than mass manufacturing and shipping worldwide, we're building a distributed and ethical supply chain through a global maker network.</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <section>
             <h2>How it Works</h2>
