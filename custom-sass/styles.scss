@@ -56,12 +56,17 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
 .bg-img {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100%;
     width: 100%;
+}
+
+.btn-min-width {
+    min-width: 11.25rem;
 }
 
 
