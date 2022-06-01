@@ -1,7 +1,7 @@
 // colors 
 $white:    #fff;
 $gray-100: #f8f9fa;
-$gray-200: #e9ecef; // 
+$gray-200: #bbb; // overwritten
 $gray-300: #dee2e6;
 $gray-400: #69696a; // overwritten
 $gray-500: #adb5bd;
@@ -81,6 +81,10 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+ul {
+  list-style: none;
+}
+
 .bg-img {
     background-size: cover;
     background-repeat: no-repeat;
@@ -93,7 +97,16 @@ $container-max-widths: (
     min-width: 11.25rem;
 }
 
+.footer-hover button:hover {
+  background-color: #fff;
+}
 
+.footer-hover:hover svg {
+  fill: #fff;
+}
 
+.border-container {
+  border-bottom: .1rem dashed #fff;
+}
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'
