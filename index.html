@@ -14,8 +14,8 @@
 <body>
     <header class="sticky-top">
         <h1 class="visually-hidden">Opendesk</h1>
-        <nav class="navbar navbar-light bg-white">
-            <div class="container-md">
+        <nav class="navbar navbar-expand-md navbar-light bg-white">
+            <div class="container-fluid">
                 <button class="navbar-toggler btn border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +37,7 @@
                     </svg>
                 </a>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#777778" class="bi bi-cart3 d-md-none" viewBox="0 0 16 16">
                     <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
                 </svg>
 
@@ -46,26 +46,26 @@
                         <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body dropdown">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
+                        <ul class="navbar-nav justify-content-sm-end justify-content-md-start flex-grow-1 pe-sm-3 pe-md-0">
+                            <li class="nav-item dropdown fs-6">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Furniture</a>
-                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown1">
+                                <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown1">
                                     <li><a class="dropdown-item" href="#">Furniture</a></li>
                                     <li><a class="dropdown-item" href="#">Ranges</a></li>
                                     <li><a class="dropdown-item" href="#">Designers</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item dropdown fs-6">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workspaces</a>
-                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown2">
+                                <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown2">
                                     <li><a class="dropdown-item" href="#">Case Studies</a></li>
                                     <li><a class="dropdown-item" href="#">Pricing</a></li>
                                     <li><a class="dropdown-item" href="#">Why Opendesk</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item dropdown fs-6">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Open Making</a>
-                                <ul class="dropdown-menu border-0" aria-labelledby="offcanvasNavbarDropdown3">
+                                <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown3">
                                     <li><a class="dropdown-item" href="#">Intro</a></li>
                                     <li><a class="dropdown-item" href="#">Our Model</a></li>
                                     <li><a class="dropdown-item" href="#">Makers</a></li>
@@ -73,13 +73,26 @@
                                     <li><a class="dropdown-item" href="#">Designer Collaberation</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item fs-6">
                                 <a class="nav-link" href="#">Blog</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item fs-6 d-md-none">
                                 <a class="nav-link" href="#">Your dashboard</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item fs-6 d-md-none">
+                                <a class="nav-link" href="#">Join as a maker</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav d-sm-none d-md-flex">
+                            <li class="nav-item align-self-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#777778" class="bi bi-cart3" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                            </li>
+                            <li class="nav-item fs-6">
+                                <a class="nav-link" href="#">Your dashboard</a>
+                            </li>
+                            <li class="nav-item fs-6">
                                 <a class="nav-link" href="#">Join as a maker</a>
                             </li>
                         </ul>
@@ -105,17 +118,27 @@
         <div class="bg-light">
             <div class="container-md py-4">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-md-4">
                         <section class="card bg-light">
                             <img class="card-img-top" src="img/lean-desk-home-page.jpg" alt="A wooden lean desk">
                             <div class="card-body p-0 text-center">
                                 <h2 class="fs-5">Lean Desk</h2>
-                                <p class="fs-6">Generous four seat workstation</p>
+                                <p class="fs-6 px-md-1">Generous four seat workstation</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-md-4 d-sm-none d-md-block">
+                        <section class="card bg-light">
+                            <img class="card-img-top" src="img/linnea-bookshelf-home-page.jpg" alt="A wooden lean desk">
+                            <div class="card-body p-0 text-center">
+                                <h2 class="fs-5">Lean Desk</h2>
+                                <p class="fs-6 px-md-1">Generous four seat workstation</p>
                             </div>
                         </section>
                     </div>
         
-                    <div class="col-sm-6">
+                    <div class="col-sm-6 col-md-4">
                         <section class="card bg-light">   
                             <img class="card-img-top" src="img/johann-desk-home-page.jpg" alt="A 2 person Johann bench">
                             <div class="card-body p-0 text-center">
