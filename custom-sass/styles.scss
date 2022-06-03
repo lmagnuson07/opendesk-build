@@ -46,6 +46,7 @@ $light:         $gray-600;
 // font stuff
 $body-color: #323233;
 $font-size-base: 1rem;
+$font-size-sm:                $font-size-base * .875;
 $h1-font-size:                $font-size-base * 2.5; // 35
 $h2-font-size:                $font-size-base * 2; // 28
 $h3-font-size:                $font-size-base * 1.75; // 24.5
@@ -67,17 +68,33 @@ $spacer: 1.5rem;
 //   4: $spacer * 1.5,
 //   5: $spacer * 3,
 // );
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 300px, //36px - 576
+//   md: 768px, //48px
+//   lg: 992px, //32px
+//   xl: 1200px, //60px
+//   xxl: 1400px //80px
+// );
+// $container-max-widths: (
+//   sm: 336px, // 540
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px
+// );
+
 $grid-breakpoints: (
   xs: 0,
-  sm: 300px, //36px - 576
-  md: 768px, //48px
+  sm: 768px, //36px - 576
+  md: 848px, //48px
   lg: 992px, //32px
   xl: 1200px, //60px
   xxl: 1400px //80px
 );
 $container-max-widths: (
-  sm: 336px, // 540
-  md: 720px,
+  sm: 720px, // 540
+  md: 800px,
   lg: 960px,
   xl: 1140px,
   xxl: 1320px
@@ -109,6 +126,15 @@ ul {
 
 .border-container {
   border-bottom: .1rem dashed #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-page-banner {
+    height: 35vw;
+  }
+  .local-marketing-bg {
+    height: 44vw;
+  }
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss'

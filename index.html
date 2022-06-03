@@ -15,12 +15,12 @@
     <header class="sticky-top">
         <h1 class="visually-hidden">Opendesk</h1>
         <nav class="navbar navbar-expand-md navbar-light bg-white py-0">
-            <div class="container-fluid pe-md-0 pe-lg-2">
+            <div class="container-fluid pe-md-1">
                 <button class="navbar-toggler btn border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a style="padding-top: 20px; padding-bottom:20px" class="navbar-brand" href="index.html">
+                <a style="padding-top: 20px; padding-bottom:20px" class="navbar-brand px-lg-2" href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap" viewBox="0 0 16 16">
                         <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
                         <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
@@ -48,7 +48,7 @@
                     <div class="offcanvas-body dropdown">
                         <ul class="navbar-nav justify-content-sm-end justify-content-md-start flex-grow-1 pe-sm-3 pe-md-0">
                             <li class="nav-item dropdown fs-6 align-self-md-center">
-                                <a class="nav-link dropdown-toggle py-md-3" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Furniture</a>
+                                <a class="nav-link dropdown-toggle py-md-3 px-lg-3" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Furniture</a>
                                 <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown1">
                                     <li><a class="dropdown-item" href="#">Furniture</a></li>
                                     <li><a class="dropdown-item" href="#">Ranges</a></li>
@@ -56,7 +56,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown fs-6 align-self-md-center">
-                                <a class="nav-link dropdown-toggle py-md-3" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workspaces</a>
+                                <a class="nav-link dropdown-toggle py-md-3 px-lg-3" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workspaces</a>
                                 <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown2">
                                     <li><a class="dropdown-item" href="#">Case Studies</a></li>
                                     <li><a class="dropdown-item" href="#">Pricing</a></li>
@@ -64,7 +64,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown fs-6 align-self-md-center">
-                                <a class="nav-link dropdown-toggle py-md-3" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Open Making</a>
+                                <a class="nav-link dropdown-toggle py-md-3 px-lg-3" href="#" id="offcanvasNavbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Open Making</a>
                                 <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown3">
                                     <li><a class="dropdown-item" href="#">Intro</a></li>
                                     <li><a class="dropdown-item" href="#">Our Model</a></li>
@@ -74,7 +74,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item fs-6 align-self-md-center">
-                                <a class="nav-link py-md-3" href="#">Blog</a>
+                                <a class="nav-link py-md-3 px-lg-3" href="#">Blog</a>
                             </li>
                             <li class="nav-item fs-6 d-md-none">
                                 <a class="nav-link py-md-3" href="#">Your dashboard</a>
@@ -83,7 +83,7 @@
                                 <a class="nav-link" href="#">Join as a maker</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav d-sm-none d-md-flex border-start">
+                        <ul class="navbar-nav d-none d-md-flex border-start">
                             <li class="nav-item align-self-stretch px-3">
                                 <a class="nav-link" href="#" style="padding-top: 21px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#777778" class="bi bi-cart3" viewBox="0 0 16 16">
@@ -95,7 +95,9 @@
                                 <a class="nav-link py-3" href="#">Your dashboard</a>
                             </li>
                             <li class="nav-item fs-6">
-                                <a class="nav-link py-3" href="#">Join as a maker</a>
+                                <a class="nav-link py-3 text-success" data-bs-toggle="tooltip" data-bs-placement="left"
+                                data-bs-custom-class="custom-tooltip"
+                                title="Interested in making Opendesk furniture? Sign up here" href="#">Join as a maker</a>
                             </li>
                         </ul>
                     </div>
@@ -105,10 +107,10 @@
     </header>
 
     <main>
-        <div class="bg-img py-3" style="background-image: url('../img/main-page-banner-bg.jpg')">
-            <div class="container-md py-3">
-                <div class="row">
-                    <section class="col-sm-12 col-md-4 text-white">
+        <div class="bg-img py-3 py-lg-5" style="background-image: url('../img/main-page-banner-bg.jpg')">
+            <div class="container-md py-md-3 pt-xl-5">
+                <div class="row main-page-banner">
+                    <section class="col-sm-12 col-md-5 col-lg-5 text-white">
                         <h2 class="my-4 fs-1 lh-base">Furniture designed for inspiring workplaces</h2>
                         <p class="fs-4">We're changing the way furniture is made, by connecting customers to local makers</p>
                         <a class="btn btn-lg btn-success my-3 btn-min-width" href="#">Shop Furniture</a>
@@ -120,27 +122,27 @@
         <div class="bg-light">
             <div class="container-md py-4">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-6 col-md-4">
                         <section class="card bg-light">
                             <img class="card-img-top" src="img/lean-desk-home-page.jpg" alt="A wooden lean desk">
                             <div class="card-body p-0 text-center">
                                 <h2 class="fs-5">Lean Desk</h2>
-                                <p class="fs-6 px-md-1">Generous four seat workstation</p>
+                                <p class="fs-6">Generous four seat workstation</p>
                             </div>
                         </section>
                     </div>
 
-                    <div class="col-md-4 d-sm-none d-md-block">
+                    <div class="col-md-4 d-none d-md-block">
                         <section class="card bg-light">
                             <img class="card-img-top" src="img/linnea-bookshelf-home-page.jpg" alt="A wooden lean desk">
                             <div class="card-body p-0 text-center">
                                 <h2 class="fs-5">Lean Desk</h2>
-                                <p class="fs-6 px-md-1">Generous four seat workstation</p>
+                                <p class="fs-6">Generous four seat workstation</p>
                             </div>
                         </section>
                     </div>
         
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-6 col-md-4">
                         <section class="card bg-light">   
                             <img class="card-img-top" src="img/johann-desk-home-page.jpg" alt="A 2 person Johann bench">
                             <div class="card-body p-0 text-center">
@@ -155,8 +157,8 @@
 
         <div class="bg-img py-3" style="background-image: url('../img/local-marketing-bg-main-page.jpg')">
             <div class="container-md py-3">
-                <div class="row">
-                    <section class="col-sm-12 col-md-5 text-white">
+                <div class="row local-marketing-bg pt-xl-4 ps-xl-4">
+                    <section class="col-12 col-md-5 text-white">
                         <h2 class="my-4 fs-1 lh-base">A global platform for local making</h2>
                         <p class="fs-4">Opendesk is an online marketplace that hosts independently designed furniture and connects its customers to local makers around the world. Rather than mass manufacturing and shipping worldwide, we're building a distributed and ethical supply chain through a global maker network.</p>
                     </section>
