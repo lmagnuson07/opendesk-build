@@ -128,6 +128,37 @@ ul {
   border-bottom: .1rem dashed #fff;
 }
 
+.banner-img {
+  background-image: url('../img/main-page-banner-bg-sm.webp');
+}
+
+.local-marketing-img {
+  background-image: url('../img/local-marketing-bg-main-page-sm.webp');
+}
+
+.ios12-img {
+  background-image: url('../img/ios12-bg-home-page-sm.webp');
+}
+
+.inspiring-workplaces-img {
+  background-image: url('../img/inspiring-workplaces-bg-home-page-sm.webp');
+}
+
+@media screen and (min-width: 992px) {
+  .banner-img {
+    background-image: url('../img/main-page-banner-bg-lg.webp');
+  }
+  .local-marketing-img {
+    background-image: url('../img/local-marketing-bg-main-page-lg.webp');
+  }
+  .ios12-img {
+    background-image: url('../img/ios12-bg-home-page-lg.webp');
+  }
+  .inspiring-workplaces-img {
+    background-image: url('../img/inspiring-workplaces-bg-home-page-lg.webp');
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .main-page-banner {
     height: 35vw;

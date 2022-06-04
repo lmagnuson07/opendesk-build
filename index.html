@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This mock website is for demonstration purposes only. I do not claim rights or ownership of any of the content. My goal is to replicate the website as close as possible to demonstrate my bootstrap skills.">
     <title>Opendesk - Furniture designed for inspiring workplaces</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#787878">
+    <meta name="msapplication-TileColor" content="#c5c4c4">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="custom-sass/styles.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,11 +58,11 @@
                             <li class="nav-item dropdown fs-6 align-self-md-center">
                                 <a class="nav-link dropdown-toggle py-md-3 px-lg-3" href="#" id="offcanvasNavbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Furniture</a>
                                 <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown1">
-                                    <li><a class="dropdown-item" href="#">Furniture</a></li>
-                                    <li><a class="dropdown-item" href="#">Ranges</a></li>
-                                    <li><a class="dropdown-item" href="#">Designers</a></li>
-                                </ul>
-                            </li>
+                                    <li><a class="dropdown-item" href="#">Furniture</a></li> 
+                                    <li><a class="dropdown-item" href="#">Ranges</a></li> 
+                                    <li><a class="dropdown-item" href="#">Designers</a></li> 
+                                </ul> 
+                            </li> 
                             <li class="nav-item dropdown fs-6 align-self-md-center">
                                 <a class="nav-link dropdown-toggle py-md-3 px-lg-3" href="#" id="offcanvasNavbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Workspaces</a>
                                 <ul class="dropdown-menu border-0 fs-6" aria-labelledby="offcanvasNavbarDropdown2">
@@ -93,10 +100,10 @@
                                 </a>
                             </li>
                             <li class="nav-item fs-6 border-end border-start">
-                                <a class="nav-link py-3" href="#">Your dashboard</a>
+                                <a class="nav-link py-3 px-lg-2" href="#">Your dashboard</a>
                             </li>
                             <li class="nav-item fs-6">
-                                <a class="nav-link py-3 text-success" data-bs-toggle="tooltip" data-bs-placement="left"
+                                <a class="nav-link py-3 text-success ps-lg-2" data-bs-toggle="tooltip" data-bs-placement="left"
                                 data-bs-custom-class="custom-tooltip"
                                 title="Interested in making Opendesk furniture? Sign up here" href="#">Join as a maker</a>
                             </li>
@@ -108,7 +115,7 @@
     </header>
 
     <main>
-        <div class="bg-img py-3 py-lg-5 ps-sm-4" style="background-image: url('../img/main-page-banner-bg.jpg')">
+        <div class="bg-img banner-img py-3 py-lg-5 ps-sm-4">
             <div class="container-md py-md-3 pt-xl-5">
                 <div class="row main-page-banner">
                     <section class="col-12 col-sm-5 text-white">
@@ -125,7 +132,7 @@
                 <div class="row">
                     <div class="col-6 col-md-4">
                         <section class="card bg-light">
-                            <img class="card-img-top" src="img/lean-desk-home-page.jpg" alt="A wooden lean desk">
+                            <img class="card-img-top img-fluid" src="img/lean-desk-home-page.webp" width="450" height="260" alt="A wooden lean desk">
                             <div class="card-body p-0 text-center">
                                 <h2 class="fs-5">Lean Desk</h2>
                                 <p class="fs-6">Generous four seat workstation</p>
@@ -135,17 +142,17 @@
 
                     <div class="col-md-4 d-none d-md-block">
                         <section class="card bg-light">
-                            <img class="card-img-top" src="img/linnea-bookshelf-home-page.jpg" alt="A wooden lean desk">
+                            <img class="card-img-top img-fluid" src="img/linnea-bookshelf-home-page.webp" width="600" height="347" alt="A wooden lean desk">
                             <div class="card-body p-0 text-center">
-                                <h2 class="fs-5">Lean Desk</h2>
-                                <p class="fs-6">Generous four seat workstation</p>
+                                <h2 class="fs-5">Linnea Bookshelf</h2>
+                                <p class="fs-6">Elegant shelving & storage solution</p>
                             </div>
                         </section>
                     </div>
         
                     <div class="col-6 col-md-4">
                         <section class="card bg-light">   
-                            <img class="card-img-top" src="img/johann-desk-home-page.jpg" alt="A 2 person Johann bench">
+                            <img class="card-img-top img-fluid" src="img/johann-desk-home-page.webp" width="600" height="347" alt="A 2 person Johann bench">
                             <div class="card-body p-0 text-center">
                                 <h2 class="fs-5">Johann Bench</h2>
                                 <p class="fs-6">2 person canteen and meeting bench</p>
@@ -156,7 +163,7 @@
             </div>
         </div>
 
-        <div class="bg-img py-3 ps-sm-4" style="background-image: url('../img/local-marketing-bg-main-page.jpg')">
+        <div class="bg-img py-3 ps-sm-4 local-marketing-img">
             <div class="container-md py-3">
                 <div class="row local-marketing-bg pt-xl-4 ps-xl-4">
                     <section class="col-12 col-sm-5 text-white">
@@ -195,7 +202,7 @@
             </div>
         </div>
 
-        <div class="bg-img py-4 ps-sm-4" style="background-image: url('../img/ios12-bg-home-page.jpg')">
+        <div class="bg-img ios12-img py-4 ps-sm-4">
             <div class="container-md">
                 <div class="row iso12-bg">
                     <section class="col-12 col-sm-5 text-white">
@@ -228,7 +235,7 @@
             </div>
         </div>
 
-        <div class="bg-img pt-4 ps-sm-4" style="background-image: url('../img/inspiring-workplaces-bg-home-page.jpg')">
+        <div class="bg-img inspiring-workplaces-img pt-4 ps-sm-4">
             <div class="container-md pt-3">
                 <div class="row inspiring-workplaces">
                     <section class="col-12 col-sm-5 text-white">
