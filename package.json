@@ -1,0 +1,28 @@
+{
+  "name": "opendesk-build",
+  "version": "1.0.0",
+  "description": "",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmagnuson07/opendesk-build.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lmagnuson07/opendesk-build/issues"
+  },
+  "homepage": "https://github.com/lmagnuson07/opendesk-build#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
