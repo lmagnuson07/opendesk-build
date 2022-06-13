@@ -1,0 +1,169 @@
+// colors 
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #bbb; // overwritten
+$gray-300: #dee2e6;
+$gray-400: #69696a; // overwritten
+$gray-500: #adb5bd;
+$gray-600: #f1f1f1; // overwritten
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$blue:    #0d6efd;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #0dcaf0;
+
+$primary:       $blue;
+$secondary:     $gray-200;
+$success:       $green;
+$info:          $gray-400;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-600;
+// $dark:          $gray-900;
+
+// font stuff
+$body-color: #323233;
+$font-size-base: 1rem;
+$font-size-sm:                $font-size-base * .875;
+$h1-font-size:                $font-size-base * 2.5; // 35
+$h2-font-size:                $font-size-base * 2; // 28
+$h3-font-size:                $font-size-base * 1.75; // 24.5
+$h4-font-size:                $font-size-base * 1.5; // 21
+$h5-font-size:                $font-size-base * 1.25; //17.5
+$h6-font-size:                $font-size-base * 0.90;
+
+$font-family-sans-serif: 'Roboto', "Helvetica Neue", "Helvetica", Arial, sans-serif;
+
+$grid-gutter-width:           1.5rem;
+$container-padding-x: $grid-gutter-width * .83; // was .5
+
+$spacer: 1.5rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5, // was 1.5
+  5: $spacer * 3,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px, //36px - 576
+  md: 848px, //48px
+  lg: 992px, //32px
+  xl: 1200px, //60px
+  xxl: 1400px //80px
+);
+$container-max-widths: (
+  sm: 720px, // 540
+  md: 800px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+ul {
+  list-style: none;
+}
+
+.cart-hover:hover svg {
+  fill: $gray-900;
+}
+
+.custom-green {
+  color: #0c551e;
+  text-decoration: none;
+}
+
+.custom-green:hover {
+  color: #0c551e;
+  text-decoration: underline;
+}
+
+.custom-link {
+  color: $white;
+}
+
+.custom-link:hover {
+  color: $gray-300;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.btn-min-width {
+  min-width: 11.25rem;
+}
+
+.footer-hover button:hover {
+  background-color: $white;
+}
+
+.footer-hover:hover svg {
+  fill: $white;
+}
+
+.border-container {
+  border-bottom: .1rem dashed $white;
+}
+
+.banner-img {
+    background-image: url('../img/main-page-banner-bg-sm.webp');
+}
+
+.local-marketing-img {
+  background-image: url('../img/local-marketing-bg-main-page-sm.webp');
+}
+
+.ios12-img {
+  background-image: url('../img/ios12-bg-home-page-sm.webp');
+}
+
+.inspiring-workplaces-img {
+  background-image: url('../img/inspiring-workplaces-bg-home-page-sm.webp');
+}
+
+@media screen and (min-width: 992px) {
+  .banner-img {
+    background-image: url('../img/main-page-banner-bg-lg.webp');
+  }
+
+  .local-marketing-img {
+    background-image: url('../img/local-marketing-bg-main-page-lg.webp');
+  }
+  .ios12-img {
+    background-image: url('../img/ios12-bg-home-page-lg.webp');
+  }
+  .inspiring-workplaces-img {
+    background-image: url('../img/inspiring-workplaces-bg-home-page-lg.webp');
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-page-banner {
+    height: 35vw;
+  }
+  .local-marketing-bg {
+    height: 44vw;
+  }
+  .iso12-bg {
+    height: 53vw;
+  }
+  .inspiring-workplaces {
+    height: 50vw;
+  }
+}
